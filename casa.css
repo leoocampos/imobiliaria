@@ -1,0 +1,105 @@
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css";
+
+.conter {
+    margin: 0 auto;
+    width: 50%;
+    display: flex;
+}
+
+.coluna {
+    display: flex;
+}
+
+.formulario {
+    width: 100%;
+}
+
+#field {
+    width: 100%;
+    margin: 10px;
+}
+
+#button-division{
+    margin: 10px;
+}
+
+.content {
+    justify-content: flex-end;
+}
+
+.border {
+    border: 10px;
+    border-color: tomato;
+}
+
+th {
+    color: tomato;
+}
+
+.tabela {
+    width: 100%;
+    margin-top: 40px;;
+}
+
+.fadeout {
+    opacity: 0;
+    transition: 0.4s;
+}
+
+.noResults {
+    flex-direction: column;
+}
+
+.resultsRow {
+    flex-direction: row;
+}
+
+.resultsTitle{
+    text-align: center;
+}
+
+h1 {
+    font-size: 38px;
+    font-weight: bold;
+}
+
+h5 {
+    font-size: 16px; 
+}
+
+img{
+    height: 160px;
+}
+
+.resultsImage {
+    margin: 0 auto;
+}
+
+.hidden {
+    display: none;
+}
+
+.textIntro {
+    margin: 10px;
+}
+
+label {
+    font-weight: bold;
+}
+
+.fade-in {
+	opacity: 2;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 1s;
+}
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}

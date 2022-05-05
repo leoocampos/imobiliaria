@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imobiliária | Cadastro de Casas</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="casa.css">
+    <script src="https://kit.fontawesome.com/8a5385d2b7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section id="intro" class="conter noResults intro">
+        <div class="textIntro"><h1>Bem-vindo à Imobiliária</h1></div>
+        <div class="textIntro"><h5>Este é um pequeno sistema que simula o cadastro de uma lista de casas numa imobiliária fictícia. Preencha todos os campos abaixo e adicione uma nova casa para começar!</h5></div>
+    </section>
+    <section id="form" class="conter">
+        <form class="formulario">
+            <div class="coluna">
+                <div id="field">
+                    <label for="numero">Número da Residencia</label>
+                    <input class="input is-info" type="text" id="numero" placeholder="Exemplo: 58, 13A...">
+                </div>
+
+                <div id="field">
+                    <label for="bairro">Bairro</label>
+                    <input class="input is-info" type="text" id="bairro" placeholder= "Exemplo: Jaçanã, Pinheiros...">
+                </div>
+            </div>
+
+            <div class="coluna">
+                <div id="field">
+                    <label for="cidade">Cidade</label>
+                    <input class="input is-info" type="text" id="cidade" placeholder="Exemplo: São Paulo">
+                </div>
+
+                <div id="field">
+                    <label for="area">Área da Casa</label>
+                    <input class="input is-info" type="text" id="area" placeholder="Exemplo: 58mts, 100mts...">
+                </div>
+            </div>
+
+            <div class="coluna content">
+                <div id="button-division">
+                    <button class="button is-info" id="button-add">Adicionar casa</button>
+                </div>
+            </div>
+
+        </form>
+    </section>
+    <section id="noResults" class="conter noResults fade-in">
+        <div class="resultsImage"><img src="island.jpg"></div>
+        <div class="resultsTitle"><h1>Está meio silencioso por aqui...</h1></div>
+        <div><h5 class="resultsTitle">Não existe nenhuma casa cadastrada por enquanto.<br>Para cadastrar, preencha os campos e clique no botão "Adicionar Casa".</h5></div> 
+    </section>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="classes.js"></script>
+    <script src="funcoes.js"></script>
+    <script src="imobiliaria.js"></script>
+</body>
+</html>
